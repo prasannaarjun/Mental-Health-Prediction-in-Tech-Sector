@@ -8,7 +8,7 @@ from sklearn.utils.class_weight import compute_class_weight
 from sklearn.metrics import accuracy_score, classification_report
 
 # Load dataset
-data = pd.read_csv('dataset/mentalhealth-data.csv')
+data = pd.read_csv('../dataset/mentalhealth-data.csv')
 
 # Add global mental health prevalence as new features
 global_anxiety_avg = 4.10
@@ -64,6 +64,6 @@ print(f"Accuracy: {accuracy:.4f}")
 print("Classification Report:\n", report)
 
 # Save the updated model
-joblib.dump(model, "models/_random_forest_model_multiclass.pkl")
+joblib.dump(model, "../models/_random_forest_model_multiclass.pkl")
 
 print("Updated multi-class model trained and saved successfully!")

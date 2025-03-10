@@ -30,8 +30,8 @@ from sklearn.model_selection import cross_val_score
 from sklearn.ensemble import BaggingClassifier, AdaBoostClassifier
 from sklearn.neighbors import KNeighborsClassifier
 
-data=pd.read_csv('dataset\mentalhealth-data.csv')
-mentalhealth_df=pd.read_csv('dataset\mentalhealth-data.csv')
+data=pd.read_csv('../dataset/mentalhealth-data.csv')
+mentalhealth_df=pd.read_csv('../dataset/mentalhealth-data.csv')
 
 
 
@@ -352,7 +352,7 @@ def randomForest():
                                     random_state=1)
     my_forest = forest.fit(X_train, y_train)
     # Save the trained model
-    joblib.dump(my_forest, "models\_random_forest_model.pkl")
+    joblib.dump(my_forest, "../models/_random_forest_model.pkl")
 
     # make class predictions for the testing set
     y_pred_class = my_forest.predict(X_test)
