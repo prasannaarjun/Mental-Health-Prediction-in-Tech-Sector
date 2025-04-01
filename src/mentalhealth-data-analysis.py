@@ -7,7 +7,7 @@ from sklearn import preprocessing
 from sklearn.preprocessing import MinMaxScaler
 
 # import file in a variable
-file_path = '../dataset/mental health data set.csv'
+file_path = 'dataset/mental health data set.csv'
 
 # Read the CSV file into a DataFrame
 mentalhealth_df = pd.read_csv(file_path)

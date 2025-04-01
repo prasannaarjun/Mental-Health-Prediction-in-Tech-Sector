@@ -14,7 +14,7 @@ class MentalHealthSurvey:
 
         # Load the updated multi-class model
         try:
-            self.model = joblib.load("../models/_random_forest_model_multiclass.pkl")
+            self.model = joblib.load("models/_random_forest_model_multiclass.pkl")
         except Exception as e:
             messagebox.showerror("Error", f"Failed to load model: {e}")
             self.root.quit()
